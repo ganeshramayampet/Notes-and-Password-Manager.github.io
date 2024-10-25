@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Website Title</title>
+</head>
+<body>
+    <!--Notes & Password Manager -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <div class="container">
+        <header>
+            <h1>Notes & Password Manager</h1>
+        </header>
+        
+        <div class="form-section">
+            <h2>Generate Password</h2>
+            <input type="number" id="passwordLength" placeholder="Enter password length (min 5)">
+            <button id="generateBtn">Generate Password</button>
+            <textarea id="generatedPassword" placeholder="Generated Password" readonly></textarea>
+        </div>
+
+        <div class="form-section">
+            <h2>Encrypt Text</h2>
+            <input type="text" id="encryptText" placeholder="Text to encrypt">
+            <input type="text" id="encryptKey" placeholder="Secret Key">
+            <button id="encryptBtn">Encrypt</button>
+            <textarea id="encryptedText" placeholder="Encrypted Text" readonly></textarea>
+        </div>
+
+        <div class="form-section">
+            <h2>Decrypt Text</h2>
+            <input type="text" id="decryptText" placeholder="Text to decrypt">
+            <input type="text" id="decryptKey" placeholder="Secret Key">
+            <button id="decryptBtn">Decrypt</button>
+            <textarea id="decryptedText" placeholder="Decrypted Text" readonly></textarea>
+        </div>
+
+        <div class="form-section">
+            <h2>Store Password</h2>
+            <input type="text" id="accountName" placeholder="Account Name">
+            <input type="password" id="accountPassword" placeholder="Account Password">
+            <button id="storeBtn">Store Password</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Manage Passwords</h2>
+            <input type="text" id="searchAccount" placeholder="Account Name">
+            <button id="searchBtn">Search</button>
+            <textarea id="searchResult" placeholder="Search Result" readonly></textarea>
+            <button id="deletePasswordBtn">Delete Password</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Add Note</h2>
+            <textarea id="noteText" placeholder="Add your note here..."></textarea>
+            <button id="addNoteBtn">Add Note</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Manage Notes</h2>
+            <button id="getNoteBtn">Get All Notes</button>
+            <div id="noteResultContainer">
+                <ul id="noteList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
